@@ -324,7 +324,7 @@ a {
 }
 
 .moveBanner {
-  transform: translateY(380px);
+  transform: translateY(430px);
   transition: transform 0.2s ease;
 }
 
