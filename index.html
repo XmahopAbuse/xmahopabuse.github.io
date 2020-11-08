@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__logo">
+                <img src="assets/img/Logo.svg" alt="">
+            </div>
+            <div class="header__burger">
+                <button class="ham">
+
+                </button>
+            </div>
+            <div class="header__main-menu">
+                <div class="header__phone">
+                    <a href="#">+7 978 918 59 59</a>
+                </div>
+                <div class="header__messengers">
+                        <a href="https://wa.me/79789185959">
+                            <img src="assets/img/WhatsApp.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="assets/img/Telegram.svg" alt="">
+                        </a>
+                </div>
+                <div class="header__menu">
+                    <ul>
+                        <li class="header__menu-item header__menu-item-main"><a href="#">О нас</a></li>
+                        <li class="header__menu-item header__menu-item-main"><a href="#">Преимущества</a></li>
+                        <li class="header__menu-item header__menu-item-main"><a href="#">Контакты</a></li>
+                        <li class="header__menu-item header__menu-item-project"><a href="#">Проект 1</a></li>
+                        <li class="header__menu-item header__menu-item-project"><a href="#">Проект 2</a></li>
+                    </ul>
+                </div>
+                <div class="header__socials">
+                    <a href="https://www.facebook.com/Mimgroupooo-110063797484908">
+                        <img src="assets/img/Facebook.svg" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/mimgroup.ooo/">
+                        <img src="assets/img/Insta.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </header>
+        <section class="banner">
+            <div class="banner__title">
+                <h1>Вложи деньги выгодно!</h1>
+            </div>
+            <div class="banner__desc">
+                <h2>Ищем партнёров в проект по аренде торговых и жилищных площадей, с высокой доходностью</h2>
+            </div>
+            <div class="banner__buttons">
+                <ul>
+                    <li><a href="#">Проект 1</a></li>
+                    <li><a href="#">Проект 2</a></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+
+<script>
+    var navbar = document.querySelector(".header__main-menu")
+    var ham = document.querySelector(".ham")
+    var banner = document.querySelector(".banner")
+    ham.addEventListener("click", toggleHamburger)
+    function toggleHamburger(){
+        navbar.classList.toggle("showNav")
+        ham.classList.toggle("showClose")
+        banner.classList.toggle("moveBanner")
+        console.log(banner)
+    }
+</script>
