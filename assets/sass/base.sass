@@ -1,0 +1,38 @@
+@import 'header.sass','banner.sass','about.sass','directions.sass','features.sass'
+    
+$green: #8FBF00
+$orange: #FFAA00
+$basefont: #00141E
+$menuitems: #808080
+body 
+    font-size: 18px
+    color: $basefont
+    font-family: 'Ubuntu', sans-serif
+a 
+    text-decoration: 0
+    color: $basefont
+
+h3 
+    font-size: 36px
+.wrapper 
+    display: grid
+    grid-template-rows: minmax(30px, auto) 100%
+    grid-template-columns: 100%
+    max-width: 1200px
+    margin: 0 auto
+
+.main 
+    grid-row: 2/3
+    grid-column: 1/2
+    display: grid
+    grid-template-rows: minmax(600px, auto) minmax(500px, auto) minmax(2000px, auto) minmax(636px, auto)
+    grid-row-gap: 50px
+@media screen and (max-width: 768px)
+    .wrapper 
+        max-width: 700px
+
+@media screen and (max-width: 570px)
+    .wrapper
+        grid-template-rows: 150px 
+    .main
+        grid-template-rows: minmax(1000px, auto) minmax(500px, auto)  minmax(2000px, auto) minmax(980px, auto)

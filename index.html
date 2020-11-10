@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/base.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
 </head>
 <body>
@@ -15,17 +15,19 @@
             </div>
             <div class="header__burger">
                 <button class="ham">
+
                 </button>
             </div>
             <div class="header__main-menu">
                 <div class="header__phone">
-                    <a href="">+7 978 918 59 59</a>
+                    <a href="#">+7 978 918 59 59</a>
                 </div>
                 <div class="header__messengers">
-                        <a href="https://wa.me/79789185959"><img src="assets/img/WhatsApp.svg" alt="whatsapp">
+                        <a href="https://wa.me/79789185959">
+                            <img src="assets/img/WhatsApp.svg" alt="">
                         </a>
-                        <a href="">
-                            <img src="assets/img/Telegram.svg" alt="telegram">
+                        <a href="#">
+                            <img src="assets/img/Telegram.svg" alt="">
                         </a>
                 </div>
                 <div class="header__menu">
@@ -47,20 +49,25 @@
                 </div>
             </div>
         </header>
-        <section class="banner">
-            <div class="banner__title">
-                <h1>Вложи деньги выгодно!</h1>
-            </div>
-            <div class="banner__desc">
-                <h2>Ищем партнёров в проект по аренде торговых и жилищных площадей, с высокой доходностью</h2>
-            </div>
-            <div class="banner__buttons">
-                <ul>
-                    <li><a href="#">Проект 1</a></li>
-                    <li><a href="#">Проект 2</a></li>
-                </ul>
-            </div>
-        </section>
+        
+        <div class="main">
+            <!-- BANNER SECTION -->
+            <section class="banner">
+                <div class="banner__title">
+                    <h1>Вложи деньги выгодно!</h1>
+                </div>
+                <div class="banner__desc">
+                    <h2>Ищем партнёров в проект по аренде торговых и жилищных площадей, с высокой доходностью</h2>
+                </div>
+                <div class="banner__buttons">
+                    <ul>
+                        <li><a href="#">Проект 1</a></li>
+                        <li><a href="#">Проект 2</a></li>
+                    </ul>
+                </div>
+            </section>
+        <!-- END BANNER SECTION -->
+        <!-- ABOUT US SECTION -->
         <section class="about">
             <div class="about__image"></div>
             <div class="about__about-us">
@@ -75,36 +82,88 @@
                 Предлагаем вашему вниманию прибыльный, быстро окупаемый бизнес-проект, который мы поможем вам реализовать на наших земельных участках.
             </div>
         </section>
+        <!-- END ABOUT US SECTION -->
+        <!-- DIRECTION SECTION  -->
         <section class="directions">
-            <h2>Для реализации коммерческой 
-                деятельности, мы выделили несколько 
-                самых перспективных направлений
-            </h2>
-            <div class="directions__dir-1">
+            <div class="directions__title">
+                <h3>Для реализации коммерческой 
+                    деятельности, мы выделили несколько 
+                    самых перспективных направлений
+                </h3>
+            </div>
+            <div class="directions__dir-1 dir">
                 <img src="assets/img/dir1.png" alt="">
                 <p class="directions__desc">Постройка коттеджных двухэтажных домов</p>
             </div>
-            <div class="directions__dir-2">
+            <div class="directions__dir-2 dir">
                 <img src="assets/img/dir2.png" alt="">
                 <p class="directions__desc">Банный комплекс</p>
             </div>
-            <div class="directions__dir-3">
+            <div class="directions__dir-3 dir">
                 <img src="assets/img/dir3.png" alt="">
                 <p class="directions__desc">Продовольственные магазины</p>
             </div>
-            <div class="directions__dir-4">
+            <div class="directions__dir-4 dir">
                 <img src="assets/img/dir4.png" alt="">
                 <p class="directions__desc">Магазины одежды и аксессуаров</p>
             </div>
-            <div class="directions__dir-5">
+            <div class="directions__dir-5 dir">
                 <img src="assets/img/dir5.png" alt="">
+            </div>
+            <div class="directions__dir-6 dir">
+                <img src="assets/img/dir6.png" alt="">
                 <p class="directions__desc">Открыть зону с едой и напитками: лаундж бар, кальянная, булочная, кофейня, фудтраки и т.д.</p>
             </div>
-            <div class="directions__dir-6">
-                <img src="assets/img/dir6.png" alt="">
-                <p></p>
+            <div class="directions__last-note">
+                <p class="directions__desc">Открыть зону с едой и напитками: лаундж бар, кальянная, булочная, кофейня, фудтраки и т.д.</p>
             </div>
         </section>
+        <!-- END DIRECTION SECTION  -->
+        <!-- FEATURES SECTION -->
+        <section class="features">
+            <div class="features__title">
+                <h3>Преимущества</h3>
+            </div>
+            <div class="features__list">
+                <div class="features__list-item features__item-1">
+                    <div class="features__list-item-img">
+                        <img src="assets/img/features1.png" alt="">
+                    </div>
+                    <div class="features__list-item-text">
+                    <h5>Выгодно</h5>
+                    <p>У вас есть возможность не только приобрести торговые или жилищные объекты (коттеджи), для дальнейшей сдачи в аренду, но также вы можете их использовать для своей торговой деятельности.
+                        Большим преимуществом является то, что участок расположен вдоль трассы Симферополь – Ялта, по которой едут все отдыхающие в курортные зоны, в 20 минутах езды находиться курортный город Алушта.</p>
+                    </div>
+                </div>
+                <div class="features__list-item features__item-2">
+                    <div class="features__list-item-img">
+                        <img src="assets/img/features2.png" alt="">
+                    </div>
+                    <div class="features__list-item-text">
+                    <h5>Перспективно</h5>
+                    <p>Арендовать домики вы можете как для дальней сдачи в аренду посуточно или на более длительные сроки.
+                        Плюс ко всему, через участок протекает река Ангара, это может стать изюминкой вашего будущего проекта. Часть участка – это хвойный и смешанный лес, который будет радовать своей красотой ваших посетителей и отдыхающих.</p>
+                    </div>
+                </div>
+                <div class="features__list-item features__item-3">
+                    <div class="features__list-item-img">
+                        <img src="assets/img/features3.png" alt="">
+                    </div>
+                    <div class="features__list-item-text">
+                    <h5>Удобно</h5>
+                    <p>Удобное расположение, по улице все необходимые коммуникации - газ, электроэнергия. Отличная транспортная доступность: участок расположен у  трассы.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="features__buttons">
+                <ul>
+                    <li><a href="#">Связаться с нами</a></li>
+                    <li><a href="#">Ознакомиться с проектом</a></li>
+                </ul>
+            </div>
+        </section>
+        <!-- END FEATURES SECTION -->
+        </div>
     </div>
 </body>
 </html>
@@ -112,12 +171,12 @@
 <script>
     var navbar = document.querySelector(".header__main-menu")
     var ham = document.querySelector(".ham")
-    var banner = document.querySelector(".banner")
+    var main = document.querySelector(".main")
     ham.addEventListener("click", toggleHamburger)
     function toggleHamburger(){
         navbar.classList.toggle("showNav")
         ham.classList.toggle("showClose")
-        banner.classList.toggle("moveBanner")
+        main.classList.toggle("moveBanner")
         console.log(banner)
     }
 </script>
