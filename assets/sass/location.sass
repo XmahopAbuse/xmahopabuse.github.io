@@ -15,7 +15,6 @@
         grid-column: 1/2
         iframe
             border-radius: 0px 20px 20px 20px
-            display: none
     &__projects
         display: flex
         justify-content: space-between
@@ -28,12 +27,44 @@
             font-size: 36px
             font-weight: bold
             color: #fff
+
         &-project-1
             border-radius: 0px 20px 20px 20px
-            background: url('../img/project-1.jpg')
-            background-size: cover
+            position: relative
+            overflow: hidden
+            &::after
+                content: ''
+                position: absolute
+                height: 100%
+                width: 100%
+                left: 0
+                top: 0
+                background: url('../img/project-1.jpg')
+                background-size: cover
+                background-position: center
+                transition: transform 1s ease
+                z-index: -1
+            &:hover::after
+                transform: scale(1.1)
+            &:hover
+                color: #fff
         &-project-2
-            border-radius: 20px 20px 0px 20px
-            background: url('../img/project-2.jpg')
-            background-size: cover
-            
+            border-radius: 0px 20px 20px 20px
+            position: relative
+            overflow: hidden
+            &::after
+                content: ''
+                position: absolute
+                height: 100%
+                width: 100%
+                left: 0
+                top: 0
+                background: url('../img/project-2.jpg')
+                background-size: cover
+                background-position: center
+                transition: transform 1s ease
+                z-index: -1
+            &:hover::after
+                transform: scale(1.1)
+            &:hover
+                color: #fff
