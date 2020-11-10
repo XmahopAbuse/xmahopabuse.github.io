@@ -1,0 +1,39 @@
+.location
+    grid-row: 5/6
+    grid-column: 1/2
+    display: grid
+    grid-template-rows: minmax(20px, auto) minmax(280px, auto) minmax(180px, auto) minmax(40px, auto)
+    grid-row-gap: 20px 
+    &__title
+        grid-row: 1/2
+        grid-column: 1/2
+        align-self: end
+        h3
+            margin: 0
+    &__map
+        grid-row: 2/3
+        grid-column: 1/2
+        iframe
+            border-radius: 0px 20px 20px 20px
+            display: none
+    &__projects
+        display: flex
+        justify-content: space-between
+        a
+            width: 48.34%
+            display: flex
+            justify-content: center
+            align-items: center
+        a
+            font-size: 36px
+            font-weight: bold
+            color: #fff
+        &-project-1
+            border-radius: 0px 20px 20px 20px
+            background: url('../img/project-1.jpg')
+            background-size: cover
+        &-project-2
+            border-radius: 20px 20px 0px 20px
+            background: url('../img/project-2.jpg')
+            background-size: cover
+            

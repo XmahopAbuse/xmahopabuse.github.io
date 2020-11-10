@@ -1,9 +1,10 @@
-@import 'header.sass','banner.sass','about.sass','directions.sass','features.sass'
+@import 'header.sass','banner.sass','about.sass','directions.sass','features.sass', 'location.sass'
     
 $green: #8FBF00
 $orange: #FFAA00
 $basefont: #00141E
 $menuitems: #808080
+$linkhover: #aaaaaa
 body 
     font-size: 18px
     color: $basefont
@@ -11,6 +12,9 @@ body
 a 
     text-decoration: 0
     color: $basefont
+    &:hover
+        color: $linkhover
+        
 
 h3 
     font-size: 36px
@@ -25,8 +29,9 @@ h3
     grid-row: 2/3
     grid-column: 1/2
     display: grid
-    grid-template-rows: minmax(600px, auto) minmax(500px, auto) minmax(2000px, auto) minmax(636px, auto)
+    grid-template-rows: minmax(600px, auto) minmax(500px, auto) minmax(2000px, auto) minmax(636px, auto) minmax(720px, auto)
     grid-row-gap: 50px
+    margin-top: 35px
 @media screen and (max-width: 768px)
     .wrapper 
         max-width: 700px
