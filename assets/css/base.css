@@ -795,7 +795,7 @@
   background: #fff;
   border: 2px solid #8FBF00;
   color: #8FBF00;
-  box-sizing: border-box;
+  text-decoration: none;
 }
 .location__footer-number {
   font-weight: 700;
