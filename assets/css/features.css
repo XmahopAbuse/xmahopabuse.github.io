@@ -129,13 +129,15 @@
   }
   .features__list-item-text {
     width: 100%;
+    margin-top: 25px;
   }
 }
 @media screen and (max-width: 500px) {
   .features__buttons {
     background: #fff;
-    align-items: start;
+    align-items: center;
     margin-top: 15px;
+    justify-self: start;
   }
   .features__buttons ul {
     margin: 0;
