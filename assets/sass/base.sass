@@ -4,7 +4,8 @@ $green: #8FBF00
 $orange: #FFAA00
 $basefont: #00141E
 $menuitems: #808080
-$linkhover: #aaaaaa
+$linkhover: #8FBF00
+$linkactive: #FFAA00
 body 
     font-size: 18px
     color: $basefont
@@ -14,6 +15,8 @@ a
     color: $basefont
     &:hover
         color: $linkhover
+    &:active
+        color: $linkactive
         
 
 h3 
@@ -39,6 +42,8 @@ h3
 @media screen and (max-width: 768px)
     .wrapper 
         max-width: 700px
+    .main
+        grid-template-rows: minmax(700px, auto) minmax(500px, auto)  minmax(1800px, auto) minmax(980px, auto) minmax(980px, auto) minmax(160px, auto)
 
 @media screen and (max-width: 570px)
     .wrapper

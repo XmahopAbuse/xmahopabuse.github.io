@@ -110,8 +110,14 @@
     grid-column: 1/3;
   }
 }
+@media screen and (max-width: 906px) {
+  .banner {
+    grid-column-gap: 20px;
+  }
+}
 @media screen and (max-width: 768px) {
   .banner {
+    grid-column-gap: 0px;
     background: #fff;
     max-width: 100%;
     object-fit: cover;

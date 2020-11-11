@@ -96,8 +96,7 @@
   align-items: center;
 }
 .location__footer-accept {
-  width: 294px;
-  height: 80px;
+  padding: 28px 45px 25px 45px;
   background-color: #8FBF00;
   border-radius: 0px 20px 20px 20px;
   display: flex;
@@ -108,7 +107,7 @@
 }
 .location__footer-accept:hover {
   background: #fff;
-  border: 2px solid #8FBF00;
+  box-shadow: 0 0 0 2px #8FBF00;
   color: #8FBF00;
   text-decoration: none;
 }
