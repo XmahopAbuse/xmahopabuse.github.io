@@ -966,7 +966,7 @@ body {
 }
 
 a {
-  text-decoration: 0;
+  text-decoration: none;
   color: #00141E;
 }
 a:hover {
