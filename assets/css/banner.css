@@ -51,9 +51,21 @@
   background: #8FBF00;
   border-radius: 0px 20px 20px 20px;
 }
+.banner__buttons li:nth-child(1) > a:hover {
+  background: #ffffff;
+  border: 2px solid #8FBF00;
+  padding: 28px 68px 28px 68px;
+  color: #8FBF00;
+}
 .banner__buttons li:nth-child(2) > a {
   background: #FFAA00;
   border-radius: 20px 20px 0px 20px;
+}
+.banner__buttons li:nth-child(2) > a:hover {
+  background: #ffffff;
+  border: 2px solid #FFAA00;
+  padding: 28px 68px 28px 68px;
+  color: #FFAA00;
 }
 .banner__buttons a {
   padding: 30px 70px 30px 70px;
