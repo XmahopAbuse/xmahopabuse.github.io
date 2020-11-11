@@ -117,9 +117,9 @@
     display: none;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) {
   .directions {
-    grid-template-rows: minmax(250px, auto) minmax(300px, auto) minmax(300px, auto) minmax(300px, auto) minmax(300px, auto) minmax(300px, auto) minmax(300px, auto) minmax(150px, auto);
+    grid-template-rows: minmax(250px, auto) minmax(300px, auto) minmax(300px, auto) minmax(300px, auto) minmax(300px, auto) minmax(300px, auto) minmax(300px, auto) minmax(1px, auto);
   }
   .directions p {
     font-size: 18px;
