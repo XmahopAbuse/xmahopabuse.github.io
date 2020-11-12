@@ -71,7 +71,7 @@
 @media screen and (max-width: 1024px) {
   .slider {
     grid-template-columns: 50% 50%;
-    grid-template-rows: 80% 20%;
+    grid-template-rows: 73% 27%;
   }
   .slider__full-image {
     grid-row: 1/2;
@@ -125,6 +125,7 @@
     grid-template-rows: 300px 86px 300px;
     grid-template-columns: 100%;
     grid-row-gap: 25px;
+    margin-top: 30px;
   }
   .slider__full-image {
     grid-row: 1/2;
@@ -154,6 +155,14 @@
 @media screen and (max-width: 364px) {
   .slider {
     grid-template-rows: 300px 86px 500px;
+  }
+}
+@media screen and (max-width: 332px) {
+  .slider {
+    grid-template-rows: 310px 86px 500px;
+  }
+  .slider__preview a {
+    margin-right: 10px;
   }
 }
 
