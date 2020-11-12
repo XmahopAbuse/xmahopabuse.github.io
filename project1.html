@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="node_modules/lightbox2/dist/css/lightbox.css">
+    <script src="node_modules/lightbox2/dist/js/lightbox.js"></script>
+    <script src="node_modules/lightbox2/dist/js/lightbox-plus-jquery.js"></script>
+</head>
+<script>
+    lightbox.option({
+      'maxWidth': 1200,
+      'maxHeight': 1000,
+      fitImagesInViewport: false 
+    })
+</script>
+<body>
+    
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__logo">
+                <img src="assets/img/Logo.svg" alt="">
+            </div>
+            <div class="header__burger">
+                <button class="ham">
+
+                </button>
+            </div>
+            <div id="header" class="header__main-menu">
+                <div class="header__phone">
+                    <a href="tel:+79789185959">+7 978 918 59 59</a>
+                </div>
+                <div class="header__messengers">
+                        <a target="_blank" href="https://wa.me/79789185959">
+                            <img src="assets/img/WhatsApp.svg" alt="">
+                        </a>
+                        <a target="_blank" href="#">
+                            <img src="assets/img/Telegram.svg" alt="">
+                        </a>
+                </div>
+                <div class="header__menu">
+                    <ul>
+                        <li class="header__menu-item header__menu-item-main"><a href="#about">О нас</a></li>
+                        <li class="header__menu-item header__menu-item-main"><a href="#features">Преимущества</a></li>
+                        <li class="header__menu-item header__menu-item-main"><a href="#location">Контакты</a></li>
+                        <li class="header__menu-item header__menu-item-project"><a target="_blank" href="#">Проект 1</a></li>
+                        <li class="header__menu-item header__menu-item-project"><a target="_blank" href="#">Проект 2</a></li>
+                    </ul>
+                </div>
+                <div class="header__socials">
+                    <a target="_blank" href="https://www.facebook.com/Mimgroupooo-110063797484908">
+                        <img src="assets/img/Facebook.svg" alt="">
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/mimgroup.ooo/">
+                        <img src="assets/img/Insta.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </header>
+        
+        <div class="project1-main">
+            <!-- SLIDER SECTION  -->
+            <section class="slider">
+                <div class="slider__full-image">
+                    <a href="assets/img/slider-1-full.png" data-lightbox="image-1">
+                        <img id="slider-full-1" src="assets/img/slider-1.png" alt="">
+                    </a>
+                    <a href="assets/img/slider-2.png" data-lightbox="image-2">
+                        <img id="slider-full-2" src="assets/img/slider-2.png" alt="">
+                    </a>
+                    <a href="assets/img/slider-3.png" data-lightbox="image-3">
+                    <img id="slider-full-3" src="assets/img/slider-3.png" alt="">
+                    </a>
+                </div>
+                <div class="slider__preview">
+                    <a href="#" onclick="showSlider(1)">
+                        <img id="slider-preview-1" class="slider__preview__active" src="assets/img/slider-1.png" alt="">
+                    </a>
+                    <a href="#" onclick="showSlider(2)">
+                        <img id="slider-preview-2" src="assets/img/slider-2.png" alt="">
+                    </a>
+                    <a href="#" onclick="showSlider(3)">
+                        <img id="slider-preview-3" src="assets/img/slider-3.png" alt="">
+                    </a>
+                </div>
+                <div class="slider__text">
+                    <h3>Участок Симферопо&shy;льского лесничества</h3>
+                    <p>Расположен вдоль трассы Симферополь - Ялта, в селе Привольное, улица Лесная</p>
+                    <p>Ближайший крупный населенный пункт – это туристический город Алушта, в 20 минутах езды.</p>
+                    <p>Площадь участка составляет 17 соток, с прекрасными видами, на великолепный хвойный и смешанный лес</p>
+                </div>
+            </section>
+            <!-- END SLIDER SECTION  -->
+        </div>
+    </div>
+
+<script>
+    var slides = 3
+    for (i = 1; i <= slides; i++){
+        document.getElementById('slider-full-'+i).style.display = 'none'
+    }
+    document.getElementById('slider-full-1').style.display = 'block'
+    function showSlider(sliderNum){
+        for (i = 1; i <= slides; i++){
+            document.getElementById('slider-full-'+i).style.display = 'none'
+            document.getElementById('slider-preview-'+i).classList.remove('slider__preview__active')
+        }
+        document.getElementById('slider-full-' + sliderNum).style.display = 'block'
+        document.getElementById('slider-preview-' + sliderNum).classList.add('slider__preview__active')
+    }
+</script>

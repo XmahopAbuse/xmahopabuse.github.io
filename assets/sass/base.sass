@@ -1,4 +1,4 @@
-@import 'header.sass','banner.sass','about.sass','directions.sass','features.sass', 'location.sass', 'footer.sass'
+@import 'header.sass','banner.sass','about.sass','directions.sass','features.sass', 'location.sass', 'footer.sass','project1_slider.sass'
     
 $green: #8FBF00
 $orange: #FFAA00
@@ -36,6 +36,14 @@ h3
     grid-row-gap: 50px
     margin-top: 35px
 
+.project1-main
+    grid-row: 2/3
+    grid-column: 1/2
+    display: grid
+    grid-template-rows: minmax(500px, auto) 
+    margin-top: 35px
+
+
 @media screen and (max-width: 620px)
 
 
@@ -50,3 +58,8 @@ h3
         grid-template-rows: 150px 
     .main
         grid-template-rows: minmax(1000px, auto) minmax(500px, auto)  minmax(1800px, auto) minmax(980px, auto) minmax(980px, auto) minmax(160px, auto)
+
+@media screen and (max-width: 684)
+    .project1-main
+        grid-template-rows: minmax(970px, auto) 
+
