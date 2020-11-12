@@ -104,21 +104,33 @@
         &__item
             display: block
             text-align: center
+        &__items
+            &-item1-text,&-item2-text,&-item3-text,&-item4-text
+                text-align: left
+        
     
 @media screen and ( max-width: 450px )
     .landmarks
         grid-template-columns: 1fr
-        grid-template-rows: 100px 1fr 1fr 1fr 1fr
+        grid-template-rows: 100px minmax(600px,auto)
         &__items
             grid-template-columns: 1fr
             &-item1-text,&-item2-text,&-item3-text,&-item4-text
                 width: 100%
                 text-align: left
+                margin: 0
             &-item-img,&-item2-img,&-item3-img,&-item4-img
                 justify-self: start
                 text-align: center
+                
         &__item
             img 
                 width: 300px
                 text-align: center
-       
+@media screen and ( max-width: 320px )
+    .landmarks
+        &__items
+            grid-row-gap: 0
+        &__item
+            img
+                width: 220px
