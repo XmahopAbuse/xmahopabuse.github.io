@@ -1,0 +1,64 @@
+.locate {
+  grid-row: 3/4;
+  grid-column: 1/2;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 55% 45%;
+  grid-column-gap: 35px;
+  margin-top: 60px;
+}
+.locate__text {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  line-height: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.locate__text h3 {
+  margin: 0;
+  padding: 0;
+}
+.locate__text ul {
+  margin: 0;
+  padding: 0;
+}
+.locate__text ul li {
+  list-style: none;
+}
+.locate__text ul li::before {
+  content: "+ ";
+  font-weight: 700;
+  color: #8FBF00;
+}
+.locate__image {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  background: url("../img/locate_bg.png") no-repeat;
+  background-size: cover;
+  border-radius: 0px 20px 20px 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .locate {
+    grid-template-columns: 70% 25%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .locate {
+    grid-template-columns: 100%;
+    grid-template-rows: minmax(350px, auto) minmax(480px, auto);
+    grid-column-gap: 0;
+  }
+  .locate__text {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+  .locate__image {
+    grid-row: 1/2;
+    grid-column: 1/3;
+    max-width: 700px;
+  }
+}
+
+/*# sourceMappingURL=project1_location.css.map */

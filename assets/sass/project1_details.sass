@@ -1,0 +1,38 @@
+.details
+    grid-row: 4/5
+    grid-column: 1/2
+    &__table
+        display: table
+        &__body
+            display: table-row-group
+        &__cell
+            display: table-cell
+            border-bottom: 2px solid #EBEBEB
+            padding: 20px
+            font-weight: 400
+            line-height: 28px
+        &__row
+            display: table-row
+
+.first-column
+    width: 30%
+    color: #808080
+    text-align: right
+.second-column
+    width: 70%
+
+
+@media screen and ( max-width: 320px  )
+    .first-column
+        display: block
+        width: 100%
+        text-align: left
+        border: none
+        padding: 0
+        margin-top: 15px
+    .second-column
+        display: block
+        width: 100%
+        text-align: left
+        border: none
+        padding: 0

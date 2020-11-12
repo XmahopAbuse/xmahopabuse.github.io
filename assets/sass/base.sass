@@ -1,4 +1,4 @@
-@import 'header.sass','banner.sass','about.sass','directions.sass','features.sass', 'location.sass', 'footer.sass','project1_slider.sass','project1_landmarks.sass'
+@import 'header.sass','banner.sass','about.sass','directions.sass','features.sass', 'location.sass', 'footer.sass','project1_slider.sass','project1_landmarks.sass','project1_location.sass','project1_details.sass'
     
 $green: #8FBF00
 $orange: #FFAA00
@@ -32,7 +32,8 @@ h3
     grid-row: 2/3
     grid-column: 1/2
     display: grid
-    grid-template-rows: minmax(600px, auto) minmax(500px, auto) minmax(2000px, auto) minmax(636px, auto) minmax(720px, auto) minmax(90px, auto)
+    grid-template-rows: repeat(4, auto)
+    // grid-template-rows: minmax(600px, auto) minmax(500px, auto) minmax(2000px, auto) minmax(636px, auto) minmax(720px, auto) minmax(90px, auto)
     grid-row-gap: 50px
     margin-top: 35px
 
@@ -40,9 +41,9 @@ h3
     grid-row: 2/3
     grid-column: 1/2
     display: grid
-    grid-template-rows: minmax(500px, auto) minmax(1600px, auto)
-    margin-top: 75px
-    grid-row-gap: 35px
+    grid-template-rows: minmax(500px, auto) minmax(1300px, auto) minmax(540px, auto)
+
+
 
 @media screen and (max-width: 1024px)
     .wrapper
@@ -58,23 +59,3 @@ h3
 
 @media screen and (max-width: 620px)
 
-
-@media screen and (max-width: 768px)
-    .wrapper 
-        max-width: 700px
-    .main
-        grid-template-rows: minmax(700px, auto) minmax(500px, auto)  minmax(1800px, auto) minmax(980px, auto) minmax(980px, auto) minmax(160px, auto)
-
-@media screen and (max-width: 570px)
-    .wrapper
-        grid-template-rows: 150px 
-    .main
-        grid-template-rows: minmax(1000px, auto) minmax(500px, auto)  minmax(1800px, auto) minmax(980px, auto) minmax(980px, auto) minmax(160px, auto)
-
-@media screen and (max-width: 684px)
-    .project1-main
-        grid-template-rows: minmax(800px, auto) minmax(1600px, auto) 
-
-@media screen and (max-width: 450px)
-    .project1-main
-        grid-template-rows: minmax(850px, auto) minmax(2500px, auto) 

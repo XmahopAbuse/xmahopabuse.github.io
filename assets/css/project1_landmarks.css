@@ -3,7 +3,7 @@
   grid-column: 1/2;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 40px minmax(1400px, auto);
+  grid-template-rows: 40px minmax(1500px, auto);
 }
 .landmarks__title {
   grid-row: 1/2;
@@ -83,7 +83,7 @@
 }
 @media screen and (max-width: 1200px) {
   .landmarks {
-    grid-template-rows: 40px 1300px;
+    grid-template-rows: 40px minmax(900px, auto);
   }
 }
 @media screen and (max-width: 1024px) {
@@ -94,7 +94,7 @@
 }
 @media screen and (max-width: 900px) {
   .landmarks {
-    grid-template-rows: 40px 1100px;
+    grid-template-rows: 40px minmax(300px, auto);
   }
 }
 @media screen and (max-width: 768px) {
