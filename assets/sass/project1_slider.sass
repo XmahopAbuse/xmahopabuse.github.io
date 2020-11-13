@@ -88,11 +88,13 @@
     .slider
         grid-template-rows: 80% 20%
         grid-template-columns: 45% 55%
+        &__text
+            word-break: break-all
         &__full-image
             img
                 width: 299px
         &__preview
-            margin-top: -80px
+            margin-top: -50px
             img 
                 width: 86px
 @media screen and (max-width: 684px)

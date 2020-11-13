@@ -1,4 +1,4 @@
-@import 'header.sass','banner.sass','about.sass','directions.sass','features.sass', 'location.sass', 'footer.sass','project1_slider.sass','project1_landmarks.sass','project1_location.sass','project1_details.sass','project1_concept.sass','project1_callback.sass'
+@import 'header.sass','banner.sass','about.sass','directions.sass','features.sass', 'location.sass', 'footer.sass','project1_slider.sass','project1_landmarks.sass','project1_location.sass','project1_details.sass','project1_concept.sass','project1_callback.sass','project2.sass'
     
 $green: #8FBF00
 $orange: #FFAA00
@@ -23,7 +23,7 @@ h3
     font-size: 36px
 .wrapper 
     display: grid
-    grid-template-rows: minmax(90px, auto)
+    grid-template-rows: minmax(120px, auto)
     grid-template-columns: 100%
     max-width: 1200px
     margin: 0 auto
@@ -32,17 +32,24 @@ h3
     grid-row: 2/3
     grid-column: 1/2
     display: grid
-    grid-template-rows: minmax(600px, auto) minmax(500px, auto) minmax(2000px, auto) minmax(636px, auto) minmax(720px, auto) minmax(90px, auto)
+    grid-template-rows: minmax(600px, auto) auto auto auto auto auto
     grid-row-gap: 50px
 .project1-main
     grid-row: 2/3
     grid-column: 1/2
     display: grid
     grid-template-rows: auto auto auto auto auto auto auto
+    grid-row-gap: 30px
+.project2-main
+    grid-row: 2/3
+    grid-column: 1/2
+    display: grid
+    grid-template-rows: auto auto
+    max-width: 1200px
 
 @media screen and ( max-width: 1150px )
     .wrapper 
-        grid-template-rows: minmax(180px, auto)
+        grid-template-rows: 180px
 @media screen and (max-width: 1024px)
     .wrapper
         max-width: 900px

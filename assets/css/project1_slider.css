@@ -110,11 +110,14 @@
     grid-template-rows: 80% 20%;
     grid-template-columns: 45% 55%;
   }
+  .slider__text {
+    word-break: break-all;
+  }
   .slider__full-image img {
     width: 299px;
   }
   .slider__preview {
-    margin-top: -80px;
+    margin-top: -50px;
   }
   .slider__preview img {
     width: 86px;

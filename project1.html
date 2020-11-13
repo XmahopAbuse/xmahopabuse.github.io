@@ -46,8 +46,8 @@
                         <li class="header__menu-item header__menu-item-main"><a href="#about">О нас</a></li>
                         <li class="header__menu-item header__menu-item-main"><a href="#features">Преимущества</a></li>
                         <li class="header__menu-item header__menu-item-main"><a href="#location">Контакты</a></li>
-                        <li class="header__menu-item header__menu-item-project"><a target="_blank" href="#">Проект 1</a></li>
-                        <li class="header__menu-item header__menu-item-project"><a target="_blank" href="#">Проект 2</a></li>
+                        <li class="header__menu-item header__menu-item-project"><a target="_blank" href="project1.html">Проект 1</a></li>
+                        <li class="header__menu-item header__menu-item-project"><a target="_blank" href="project2.html">Проект 2</a></li>
                     </ul>
                 </div>
                 <div class="header__socials">
@@ -87,7 +87,7 @@
                     </a>
                 </div>
                 <div class="slider__text">
-                    <h3>Участок Симферопо&shy;льского лесничества</h3>
+                    <h3>Участок Симферопольского лесничества</h3>
                     <p>Расположен вдоль трассы Симферополь - Ялта, в селе Привольное, улица Лесная</p>
                     <p>Ближайший крупный населенный пункт – это туристический город Алушта, в 20 минутах езды.</p>
                     <p>Площадь участка составляет 17 соток, с прекрасными видами, на великолепный хвойный и смешанный лес</p>
@@ -195,8 +195,6 @@
                         </div>
                     </div>
                 </div>
-
-                </div>
             </section>
             <!-- DETAILS   -->
             <!-- CONCEPT -->
@@ -282,11 +280,11 @@
             </div>
             <nav class="footer__nav">
                 <ul>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Преимущества</a></li>
-                    <li><a href="#">Контакты</a></li>
-                    <li><a href="#">Проект 1</a></li>
-                    <li><a href="#">Проект 2</a></li>
+                    <li><a href="index.html#about">О нас</a></li>
+                    <li><a href="index.html#features">Преимущества</a></li>
+                    <li><a href="index.html#location">Контакты</a></li>
+                    <li><a target="_blank" href="project1.html">Проект 1</a></li>
+                    <li><a target="_blank" href="project2.html">Проект 2</a></li>
                 </ul>
             </nav>
             <div class="footer__details">
@@ -301,7 +299,21 @@
         <!-- END FOOTER -->
         </div>
     </div>
-
+</div>
+</body>
+</html>
+<script>
+    var navbar = document.querySelector(".header__main-menu")
+    var ham = document.querySelector(".ham")
+    var main = document.querySelector(".main")
+    ham.addEventListener("click", toggleHamburger)
+    function toggleHamburger(){
+        navbar.classList.toggle("showNav")
+        ham.classList.toggle("showClose")
+        main.classList.toggle("moveBanner")
+        console.log(banner)
+    }
+</script>
 <script>
     var slides = 3
     for (i = 1; i <= slides; i++){

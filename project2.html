@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="node_modules/lightbox2/dist/css/lightbox.css">
+    <script src="node_modules/lightbox2/dist/js/lightbox.js"></script>
+    <script src="node_modules/lightbox2/dist/js/lightbox-plus-jquery.js"></script>
+</head>
+<script>
+    lightbox.option({
+      'maxWidth': 1200,
+      'maxHeight': 1000,
+      fitImagesInViewport: false 
+    })
+</script>
+<body id="proj-2">
+    
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__logo">
+                <img src="assets/img/Logo.svg" alt="">
+            </div>
+            <div class="header__burger">
+                <button class="ham">
+
+                </button>
+            </div>
+            <div id="header" class="header__main-menu">
+                <div class="header__phone">
+                    <a href="tel:+79789185959">+7 978 918 59 59</a>
+                </div>
+                <div class="header__messengers">
+                        <a target="_blank" href="https://wa.me/79789185959">
+                            <img src="assets/img/WhatsApp.svg" alt="">
+                        </a>
+                        <a target="_blank" href="#">
+                            <img src="assets/img/Telegram.svg" alt="">
+                        </a>
+                </div>
+                <div class="header__menu">
+                    <ul>
+                        <li class="header__menu-item header__menu-item-main"><a href="#about">О нас</a></li>
+                        <li class="header__menu-item header__menu-item-main"><a href="#features">Преимущества</a></li>
+                        <li class="header__menu-item header__menu-item-main"><a href="#location">Контакты</a></li>
+                        <li class="header__menu-item header__menu-item-project"><a target="_blank" href="project1.html">Проект 1</a></li>
+                        <li class="header__menu-item header__menu-item-project"><a target="_blank" href="project2.html">Проект 2</a></li>
+                    </ul>
+                </div>
+                <div class="header__socials">
+                    <a target="_blank" href="https://www.facebook.com/Mimgroupooo-110063797484908">
+                        <img src="assets/img/Facebook.svg" alt="">
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/mimgroup.ooo/">
+                        <img src="assets/img/Insta.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </header>
+        
+        <div class="project2-main">
+            <section class="in_develop">
+                <div class="in_develop__text">
+                    <h1>Страница <br> в разработке</h1>
+                </div>
+                <div class="in_develop__buttons">
+                    <ul>
+                        <li><a target="_blank" href="#">Проект 1</a></li>
+                        <li><a target="_blank" href="#">Проект 2</a></li>
+                    </ul>
+                </div>
+                <div class="in_develop__image"></div>
+            </section>
+            <!-- FOOTER -->
+        <footer class="footer footer-2">
+            <div class="footer__logo">
+                <a href="#header">
+                    <img src="assets/img/Logo-wb.svg" alt="">
+                </a>
+            </div>
+            <nav class="footer__nav">
+                <ul>
+                    <li><a href="index.html#about">О нас</a></li>
+                    <li><a href="index.html#features">Преимущества</a></li>
+                    <li><a href="index.html#locaion">Контакты</a></li>
+                    <li><a target="_blank" href="project1.html">Проект 1</a></li>
+                    <li><a target="_blank" href="project2.html">Проект 2</a></li>
+                </ul>
+            </nav>
+            <div class="footer__details">
+                <ul>
+                    <li>ООО «МИМГРУПП»</li>
+                    <li>ИНН: 9109022922</li>
+                    <li>ОГРН: 1199112005256</li>
+                    <li>Copyright © 2020 mimgroup.ooo</li>
+                </ul>
+            </div>
+        </footer>
+        <!-- END FOOTER -->
+        </div>
+    </div>
+</body>
+<script>
+    var navbar = document.querySelector(".header__main-menu")
+    var ham = document.querySelector(".ham")
+    var main = document.querySelector(".main")
+    ham.addEventListener("click", toggleHamburger)
+    function toggleHamburger(){
+        navbar.classList.toggle("showNav")
+        ham.classList.toggle("showClose")
+        main.classList.toggle("moveBanner")
+        console.log(banner)
+    }
+</script>
