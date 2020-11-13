@@ -336,7 +336,7 @@
     grid-row: 1/2;
     max-width: 100%;
     object-fit: cover;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 430px auto auto;
     margin-top: -50px;
   }
   .banner__title {
@@ -1740,7 +1740,7 @@ h3 {
   grid-row: 2/3;
   grid-column: 1/2;
   display: grid;
-  grid-template-rows: minmax(600px, auto) auto auto auto auto auto;
+  grid-template-rows: minmax(500px, auto) auto auto auto auto auto;
   grid-row-gap: 50px;
 }
 
@@ -1760,6 +1760,11 @@ h3 {
   max-width: 1200px;
 }
 
+@media screen and (max-width: 570px) {
+  .main {
+    grid-template-rows: minmax(1050px, auto) auto auto auto auto auto;
+  }
+}
 @media screen and (max-width: 1150px) {
   .wrapper {
     grid-template-rows: 180px;
