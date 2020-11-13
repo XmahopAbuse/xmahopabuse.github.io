@@ -32,13 +32,14 @@
     grid-template-rows: 290px 290px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 610px) {
   .about {
     grid-row: 2/3;
     grid-column: 1/2;
     grid-template-rows: 150px 1fr 1fr;
     grid-template-columns: 300px;
     grid-column-gap: 0;
+    grid-row-gap: 20px;
   }
   .about__image {
     grid-row: 1/2;

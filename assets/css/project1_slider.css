@@ -56,10 +56,11 @@
   border-radius: 0px 200px 200px 200px;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1150px) {
   .slider {
     grid-template-columns: auto 135px auto;
     grid-column-gap: 15px;
+    margin-top: 50px;
   }
   .slider__text {
     margin-left: 0;
@@ -128,7 +129,7 @@
     grid-template-rows: 300px 86px 300px;
     grid-template-columns: 100%;
     grid-row-gap: 25px;
-    margin-top: 30px;
+    margin-top: 0;
   }
   .slider__full-image {
     grid-row: 1/2;

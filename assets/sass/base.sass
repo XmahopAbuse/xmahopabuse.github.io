@@ -49,11 +49,11 @@ h3
 
 @media screen and ( max-width: 570px )
     .main
-        grid-template-rows: minmax(1050px, auto) auto auto auto auto auto
+        grid-template-rows: minmax(1100px, auto) auto auto auto auto auto !important
     
 @media screen and ( max-width: 1150px )
     .wrapper 
-        grid-template-rows: 180px
+        grid-template-rows: 100px
 @media screen and (max-width: 1024px)
     .wrapper
         max-width: 900px
@@ -61,6 +61,8 @@ h3
 @media screen and (max-width: 768px)
     .wrapper
         max-width: 700px
+    .main 
+        grid-template-rows: minmax(683px, auto)
 
 @media screen and (max-width: 320px)
     .wrapper

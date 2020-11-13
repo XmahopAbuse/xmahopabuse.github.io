@@ -159,7 +159,7 @@
 }
 @media screen and (max-width: 320px) {
   .landmarks__items {
-    grid-row-gap: 0;
+    grid-row-gap: 20px;
   }
   .landmarks__item img {
     width: 220px;

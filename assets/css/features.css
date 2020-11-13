@@ -113,7 +113,8 @@
     grid-column: 1/2;
     background: url("../img/features-bg-1024.png");
     background-size: cover;
-    justify-content: center;
+    justify-content: end;
+    align-items: end;
   }
 }
 @media screen and (max-width: 768px) {
@@ -137,12 +138,18 @@
   .features__buttons {
     background: #fff;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 0;
     justify-self: start;
+    justify-content: center;
   }
   .features__buttons ul {
     margin: 0;
     padding: 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  .features__buttons > ul:nth-child(1) > li:nth-child(2) > a:nth-child(1) {
+    padding: 23px 32px 23px 32px;
   }
 }
 

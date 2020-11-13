@@ -1,5 +1,4 @@
 .header {
-  margin-top: 30px;
   grid-row: 1/2;
   display: grid;
   grid-template-columns: 1fr 3.8fr;
@@ -34,6 +33,9 @@
 }
 .header__menu li {
   display: inline;
+}
+.header__menu li a {
+  color: #00141E;
 }
 .header__menu-item-main {
   margin-right: 20px;
@@ -172,7 +174,7 @@
 }
 
 .moveBanner {
-  transform: translateY(380px);
+  transform: translateY(450px);
   transition: transform 0.2s ease;
 }
 

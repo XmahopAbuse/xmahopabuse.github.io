@@ -53,8 +53,12 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .directions {
+    grid-template-rows: 140px minmax(600px, auto) minmax(600px, auto) minmax(450px, auto) 100px;
+    grid-row-gap: 0;
+  }
   .directions__last-note {
-    margin-top: -100px;
+    align-self: center;
   }
 }
 @media screen and (max-width: 1023px) {

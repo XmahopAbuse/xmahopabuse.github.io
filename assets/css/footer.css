@@ -1,9 +1,13 @@
+.footer-main {
+  grid-row: 6/7 !important;
+}
+
 .footer {
   grid-row: 6/7;
   grid-column: 1/2;
   display: grid;
   grid-template-columns: 240px auto;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: minmax(40px, auto) minmax(40px, auto);
   align-items: center;
   grid-column-gap: 40px;
   color: #808080;
@@ -42,6 +46,11 @@
   margin-right: 20px;
 }
 
+@media screen and (max-width: 1024px) {
+  .footer__nav ul li {
+    margin-right: 30px;
+  }
+}
 @media screen and (max-width: 920px) {
   .footer {
     grid-template-rows: 33% 33% 33%;
@@ -65,7 +74,7 @@
     grid-template-columns: 1fr;
   }
   .footer__logo {
-    justify-self: center;
+    justify-self: left;
   }
   .footer__nav {
     grid-row: 2/3;

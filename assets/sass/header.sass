@@ -4,7 +4,6 @@ $basefont: #00141E
 $menuitems: #808080
 
 .header 
-    margin-top: 30px
     grid-row: 1/2
     display: grid
     grid-template-columns: 1fr 3.8fr
@@ -33,6 +32,8 @@ $menuitems: #808080
             margin-left: 20px
         li 
             display: inline
+            a
+                color: $basefont
         &-item-main 
             margin-right: 20px
             &:nth-child(3)
@@ -153,7 +154,7 @@ $menuitems: #808080
 .banner 
     transition: transform 0.2s ease
 .moveBanner 
-    transform: translateY(380px)
+    transform: translateY(450px)
     transition: transform 0.2s ease
 
 @media screen and (max-width: 620px)
