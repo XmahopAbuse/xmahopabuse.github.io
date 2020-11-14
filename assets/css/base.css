@@ -414,6 +414,7 @@
 @media screen and (max-width: 1024px) {
   .about {
     grid-template-rows: 290px 290px;
+    grid-row-gap: 25px;
   }
 }
 @media screen and (max-width: 610px) {
@@ -691,8 +692,8 @@
     grid-column: 1/2;
     background: url("../img/features-bg-1024.png");
     background-size: cover;
-    justify-content: end;
-    align-items: end;
+    justify-content: flex-end;
+    align-items: flex-end;
   }
   .features__buttons ul {
     margin-right: 30px;
@@ -856,11 +857,18 @@
 }
 .location__footer ul li {
   display: inline-block;
+  margin-right: 15px;
+}
+.location__footer ul li:last-child {
+  margin-right: 0;
 }
 
 @media screen and (max-width: 1024px) {
   .location__footer {
-    grid-template-columns: 35% 25% 10% 30%;
+    grid-template-columns: 35% 20% 15% 30%;
+  }
+  .location__footer-socials {
+    justify-self: start;
   }
 }
 @media screen and (max-width: 768px) {
@@ -929,6 +937,7 @@
   grid-column-gap: 40px;
   color: #808080;
   font-size: 18px;
+  padding-bottom: 60px;
 }
 .footer a {
   color: #808080;
@@ -1122,9 +1131,6 @@
   .slider {
     grid-template-rows: 80% 20%;
     grid-template-columns: 45% 55%;
-  }
-  .slider__text {
-    word-break: break-all;
   }
   .slider__full-image img {
     width: 299px;
