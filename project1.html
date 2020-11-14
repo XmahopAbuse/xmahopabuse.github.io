@@ -34,10 +34,10 @@
                     <a href="tel:+79789015959">+7 978 901 59 59</a>
                 </div>
                 <div class="header__messengers">
-                        <a target="_blank" href="https://wa.me/79789015959">
+                        <a onclick="callback()" target="_blank" href="https://wa.me/79789015959">
                             <img src="assets/img/WhatsApp.svg" alt="">
                         </a>
-                        <a target="_blank" href="#">
+                        <a onclick="callback()" target="_blank" href="#">
                             <img src="assets/img/Telegram.svg" alt="">
                         </a>
                 </div>
@@ -46,8 +46,8 @@
                         <li class="header__menu-item header__menu-item-main"><a href="#about">О нас</a></li>
                         <li class="header__menu-item header__menu-item-main"><a href="#features">Преимущества</a></li>
                         <li class="header__menu-item header__menu-item-main"><a href="#location">Контакты</a></li>
-                        <li class="header__menu-item header__menu-item-project"><a href="project1.html">Проект 1</a></li>
-                        <li class="header__menu-item header__menu-item-project"><a href="project2.html">Проект 2</a></li>
+                        <li class="header__menu-item header__menu-item-project"><a onclick="project1()" href="project1.html">Проект 1</a></li>
+                        <li class="header__menu-item header__menu-item-project"><a onclick="project1()" href="project2.html">Проект 2</a></li>
                     </ul>
                 </div>
                 <div class="header__socials">
@@ -260,11 +260,11 @@
             <!-- CONCEPT -->
             <section class="callback">
                 <div class="location__footer">
-                    <a target="_blank" class="location__footer-accept" href="https://wa.me/79789015959">Записаться на просмотр</a>
+                    <a onclick="callback()" target="_blank" class="location__footer-accept" href="https://wa.me/79789015959">Записаться на просмотр</a>
                     <a class="location__footer-number" href="tel:+79789015959">+7 978 901 59 59 </a>
                     <ul class="location__footer-socials">
-                        <li><a target="_blank" href="https://wa.me/79789015959"><img src="assets/img/WhatsApp.svg" alt="whatsapp"></a></li>
-                        <li><a target="_blank" href="#"><img src="assets/img/Telegram.svg" alt="telegram"></a></li>
+                        <li><a onclick="callback()" target="_blank" href="https://wa.me/79789015959"><img src="assets/img/WhatsApp.svg" alt="whatsapp"></a></li>
+                        <li><a onclick="callback()" target="_blank" href="#"><img src="assets/img/Telegram.svg" alt="telegram"></a></li>
                     </ul>
                     <p class="location__footer-address" href="#">Трасса 
                         Симферополь – Ялта, село Привольное, 
@@ -283,8 +283,8 @@
                     <li><a href="index.html#about">О нас</a></li>
                     <li><a href="index.html#features">Преимущества</a></li>
                     <li><a href="index.html#location">Контакты</a></li>
-                    <li><a target="_blank" href="project1.html">Проект 1</a></li>
-                    <li><a target="_blank" href="project2.html">Проект 2</a></li>
+                    <li><a onclick="project1()" target="_blank" href="project1.html">Проект 1</a></li>
+                    <li><a onclick="project1()" target="_blank" href="project2.html">Проект 2</a></li>
                 </ul>
             </nav>
             <div class="footer__details">
@@ -329,3 +329,52 @@
         document.getElementById('slider-preview-' + sliderNum).classList.add('slider__preview__active')
     }
 </script>
+
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(69107602, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true,
+         webvisor:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/69107602" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter -->
+
+ <!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '385503399530966');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=385503399530966&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
+  
+  <script>
+    function project1() {
+    fbq('track', 'Project1');
+    };
+
+    function project2() {
+    fbq('track', 'Project2');
+    };
+
+    function callback() {
+    fbq('track', 'Callback');
+    };
+    </script>

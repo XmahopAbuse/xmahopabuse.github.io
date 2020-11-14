@@ -23,10 +23,10 @@
                     <a href="tel:+79789015959">+7 978 901 59 59</a>
                 </div>
                 <div class="header__messengers">
-                        <a target="_blank" href="https://wa.me/79789015959">
+                        <a target="_blank" onclick="callback()" href="https://wa.me/79789015959">
                             <img src="assets/img/WhatsApp.svg" alt="">
                         </a>
-                        <a target="_blank" href="#">
+                        <a target="_blank" onclick="callback()" href="https://t.me/mimgroupcrimea">
                             <img src="assets/img/Telegram.svg" alt="">
                         </a>
                 </div>
@@ -35,8 +35,8 @@
                         <li class="header__menu-item header__menu-item-main"><a href="#about">О нас</a></li>
                         <li class="header__menu-item header__menu-item-main"><a href="#features">Преимущества</a></li>
                         <li class="header__menu-item header__menu-item-main"><a href="#location">Контакты</a></li>
-                        <li class="header__menu-item header__menu-item-project"><a href="project1.html">Проект 1</a></li>
-                        <li class="header__menu-item header__menu-item-project"><a href="project2.html">Проект 2</a></li>
+                        <li class="header__menu-item header__menu-item-project"><a onclick="project1()" href="project1.html">Проект 1</a></li>
+                        <li class="header__menu-item header__menu-item-project"><a onclick="project2()" href="project2.html">Проект 2</a></li>
                     </ul>
                 </div>
                 <div class="header__socials">
@@ -61,8 +61,8 @@
                 </div>
                 <div class="banner__buttons">
                     <ul>
-                        <li><a target="_blank" href="project1.html">Проект 1</a></li>
-                        <li><a target="_blank" href="project2.html">Проект 2</a></li>
+                        <li><a onclick="project1()" target="_blank" href="project1.html">Проект 1</a></li>
+                        <li><a onclick="project2()" target="_blank" href="project2.html">Проект 2</a></li>
                     </ul>
                 </div>
             </section>
@@ -157,8 +157,8 @@
             </div>
             <div class="features__buttons">
                 <ul>
-                    <li><a target="_blank" href="https://wa.me/79789015959">Связаться с нами</a></li>
-                    <li><a target="_blank" href="project1.html">Ознакомиться с проектом</a></li>
+                    <li><a onclick="callback()" target="_blank" href="https://wa.me/79789015959">Связаться с нами</a></li>
+                    <li><a onclick="project1()" target="_blank" href="project1.html">Ознакомиться с проектом</a></li>
                 </ul>
             </div>
         </section>
@@ -171,10 +171,10 @@
             <div class="location__map">
                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A64ab49f326e3d9157acb2353100c054ebc9ca35b8330255a54c7a0ae06e0f566&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>            </div>
             <div class="location__projects">
-                <a target="_blank" href="project1.html" class="location__projects-project-1">
+                <a onclick="project1()" target="_blank" href="project1.html" class="location__projects-project-1">
                     Проект 1
                 </a>
-                <a target="_blank" href="project2.html" class="location__projects-project-2">
+                <a onclick="project2()" target="_blank" href="project2.html" class="location__projects-project-2">
                     Проект 2
                 </a>
             </div>
@@ -182,8 +182,8 @@
                 <a target="_blank" class="location__footer-accept" href="https://wa.me/79789015959">Записаться на просмотр</a>
                 <a class="location__footer-number" href="tel:+79789015959">+7 978 901 59 59 </a>
                 <ul class="location__footer-socials">
-                    <li><a target="_blank" href="https://wa.me/79789015959"><img src="assets/img/WhatsApp.svg" alt="whatsapp"></a></li>
-                    <li><a target="_blank" href="#"><img src="assets/img/Telegram.svg" alt="telegram"></a></li>
+                    <li><a onclick="callback()" target="_blank" href="https://wa.me/79789015959"><img src="assets/img/WhatsApp.svg" alt="whatsapp"></a></li>
+                    <li><a onclick="callback()" target="_blank" href="https://t.me/mimgroupcrimea"><img src="assets/img/Telegram.svg" alt="telegram"></a></li>
                 </ul>
                 <p class="location__footer-address" href="#">Трасса 
                     Симферополь – Ялта, село Привольное, 
@@ -203,8 +203,8 @@
                     <li><a href="#about">О нас</a></li>
                     <li><a href="#features">Преимущества</a></li>
                     <li><a href="#location">Контакты</a></li>
-                    <li><a target="_blank" href="project1.html">Проект 1</a></li>
-                    <li><a target="_blank" href="project2.html">Проект 2</a></li>
+                    <li><a onclick="project1()" target="_blank" href="project1.html">Проект 1</a></li>
+                    <li><a onclick="project2()" target="_blank" href="project2.html">Проект 2</a></li>
                 </ul>
             </nav>
             <div class="footer__details">
@@ -261,3 +261,51 @@
     }
     </script>
     
+
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(69107602, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true,
+         webvisor:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/69107602" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter -->
+ 
+ <!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '385503399530966');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=385503399530966&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
+  
+  <script>
+    function project1() {
+    fbq('track', 'Project1');
+    };
+
+    function project2() {
+    fbq('track', 'Project2');
+    };
+
+    function callback() {
+    fbq('track', 'Callback');
+    };
+    </script>
