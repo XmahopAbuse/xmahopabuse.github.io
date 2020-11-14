@@ -495,7 +495,7 @@
 
 @media screen and (min-width: 1024px) {
   .directions {
-    grid-template-rows: 140px minmax(600px, auto) minmax(600px, auto) minmax(450px, auto) 100px;
+    grid-template-rows: minmax(140px, auto) minmax(600px, auto) minmax(600px, auto) minmax(450px, auto) 100px;
     grid-row-gap: 0;
   }
   .directions__last-note {
@@ -693,6 +693,9 @@
     background-size: cover;
     justify-content: end;
     align-items: end;
+  }
+  .features__buttons ul {
+    margin-right: 30px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -968,7 +971,7 @@
 @media screen and (max-width: 920px) {
   .footer {
     grid-template-rows: 33% 33% 33%;
-    grid-row-gap: 40px;
+    grid-row-gap: 20px;
     grid-column-gap: 0px;
   }
   .footer__nav {
@@ -1698,6 +1701,9 @@
   }
 }
 @media screen and (max-width: 864px) {
+  .in_develop {
+    margin-top: 50px;
+  }
   .in_develop__image {
     width: 300px;
     height: 300px;
