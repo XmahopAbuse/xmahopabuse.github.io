@@ -1316,6 +1316,9 @@
   }
 }
 @media screen and (max-width: 565px) {
+  .landmarks {
+    margin-top: 50px;
+  }
   .landmarks__item {
     display: block;
     text-align: center;
@@ -1324,10 +1327,11 @@
     text-align: left;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 465px) {
   .landmarks {
     grid-template-columns: 1fr;
     grid-template-rows: 100px minmax(600px, auto);
+    margin-top: 20px;
   }
   .landmarks__items {
     grid-template-columns: 1fr;
