@@ -126,7 +126,7 @@
     width: 90%;
   }
 }
-@media screen and (max-width: 565px) {
+@media screen and (max-width: 599px) {
   .landmarks {
     margin-top: 50px;
   }
@@ -142,7 +142,7 @@
   .landmarks {
     grid-template-columns: 1fr;
     grid-template-rows: 100px minmax(600px, auto);
-    margin-top: 20px;
+    margin-top: 40px;
   }
   .landmarks__items {
     grid-template-columns: 1fr;

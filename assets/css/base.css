@@ -1315,7 +1315,7 @@
     width: 90%;
   }
 }
-@media screen and (max-width: 565px) {
+@media screen and (max-width: 599px) {
   .landmarks {
     margin-top: 50px;
   }
@@ -1331,7 +1331,7 @@
   .landmarks {
     grid-template-columns: 1fr;
     grid-template-rows: 100px minmax(600px, auto);
-    margin-top: 20px;
+    margin-top: 40px;
   }
   .landmarks__items {
     grid-template-columns: 1fr;
@@ -1832,6 +1832,7 @@ h3 {
 @media screen and (max-width: 768px) {
   .wrapper {
     max-width: 700px;
+    grid-row-gap: 60px;
   }
 
   .main {
@@ -1840,6 +1841,7 @@ h3 {
 }
 @media screen and (max-width: 320px) {
   .wrapper {
+    grid-row-gap: 0px;
     max-width: 300px;
   }
 }
